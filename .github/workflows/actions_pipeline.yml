@@ -4,5 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      -  run: gcloud auth activate-service-account --key-file /../../resolute-vault-339210-0935f51f162f.json
-      -  run: python3 test_gcloudstorage.py
+      -  run: terraform init
+      -  run: terraform workspace new dev
