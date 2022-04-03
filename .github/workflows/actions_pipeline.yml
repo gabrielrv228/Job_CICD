@@ -1,15 +1,9 @@
-name: actions_pipeline
-
-on:
-  push:
-    branches:
-      - main
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    
+
+
+  runs-on: ubuntu-latest
         
-    steps:
+   steps:
 
         -  run: python3 test_gcloudstorage.py
         -  run: terraform workspace new dev
