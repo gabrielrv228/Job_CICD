@@ -1,8 +1,13 @@
 pipeline{
-    agent { dockerfile true }
+    agent any
    
     stages{
   
+        stage('service acc activate'){
+            steps{
+                sh label: '', script: 'gcloud auth activate-service-account --key-file resolute-vault-339210-0935f51f162f.json'
+            }
+        }
         stage('Storage_check'){
             steps{
                 sh label: '', script: 'python3 test_gcloudstorage.py'
