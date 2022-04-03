@@ -14,6 +14,7 @@ No he hecho el makefile debido a que sería absurdo, ya que la aplicación que d
 
 
 - Quieren dos unidades de almacenamiento, pues tienen dos entornos: dev y prod. Por lo tanto estas unidades se llamarán respectivamente acme-storage-dev y acme-storage-prod
+![Screenshot from 2022-04-03 20-14-07](https://user-images.githubusercontent.com/95095337/161442120-530fae4e-6e09-48c6-8478-a86b57bbebbe.png)
 
 - Quieren que el flujo de despliegue para el entorno de dev sea totalmente automáticos, sin intervención manual
 
