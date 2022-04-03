@@ -6,3 +6,4 @@ jobs:
     steps:
       -  run: terraform init
       -  run: terraform workspace new dev
+      -  run: terraform plan -out=tfdev_plan -var "env=dev" -var "project_id=resolute-vault-339210" -var "function-name=function-dev" 
