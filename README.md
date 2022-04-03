@@ -9,3 +9,21 @@ También he visto que con el job dsl no te permite usar  el path file:///.... so
 
 No he hecho el makefile debido a que sería absurdo, ya que la aplicación que despliego es realmente simple y no requiere instalar ni testear mucho, no he tenido tiempo de desplegar algo mejor, aunque tampoco se especifica que clase de aplicación hay que desplegar. si es necesario para que la práctica sea apta haré algo más complejo.
 
+
+- Quieren dos unidades de almacenamiento, pues tienen dos entornos: dev y prod. Por lo tanto estas unidades se llamarán respectivamente acme-storage-dev y acme-storage-prod
+
+- Quieren que el flujo de despliegue para el entorno de dev sea totalmente automáticos, sin intervención manual
+
+
+- Sin embargo, en el flujo de despliegue de prod hará falta que un administrador apruebe el despliegue
+
+
+- Los desarrolladores de ACME han de poder hacer el despliegue desde sus máquinas para el entorno de dev
+
+
+- Quieren que las credenciales para desplegar nunca estén guardadas en el código
+
+
+- Además ACME también quiere revisar cada 10 minutos que el contenido que hay en cada una de las unidades de almacenamiento no supera los 20MiB. Si esto pasa, se vaciarán las unidades de almacenamiento
+
+- ACME lleva usando Jenkins mucho tiempo pero está actualmente abriéndose a probar nuevas teconologías con menor coste de gestión como Github Actions. Es por esto que también se requiere un pipeline de github actions para el despliegue de la unidad de almacenamiento, de modo que ACME pueda comparar ambas tecnologías
