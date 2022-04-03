@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up 
-      uses: actions/setup-test1@v1
+      uses: Practica_CICD
     
                             
     - name: Grant permission for gradlew
