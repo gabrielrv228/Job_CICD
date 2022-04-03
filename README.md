@@ -33,6 +33,6 @@ Cualquiera que tenga las credenciales de una service account con los perimisos s
 Solo hay que poner en el main.tf el path de las credenciales dentro de el repo de git
 
 - Además ACME también quiere revisar cada 10 minutos que el contenido que hay en cada una de las unidades de almacenamiento no supera los 20MiB. Si esto pasa, se vaciarán las unidades de almacenamiento
-test_gcloudstorage.py
+test_gcloudstorage.py, Funciona, pero no imprime lo que le dice la funcion por jenkins, en la terminal se ve. 
 
 - ACME lleva usando Jenkins mucho tiempo pero está actualmente abriéndose a probar nuevas teconologías con menor coste de gestión como Github Actions. Es por esto que también se requiere un pipeline de github actions para el despliegue de la unidad de almacenamiento, de modo que ACME pueda comparar ambas tecnologías
