@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "resolute-vault-339210",
+  "private_key_id": "0935f51f162f08c7da5316bb3b2c5e61d82a7bd9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQCLf+wTyKVjv0Nv\nF67/IMkXKbqr8kmaUKkUymWW5hXovTKomVWuvRlyTac+NNUUWf+0LTkfuUT3YvPA\nQDPTpqcfAZC7dWsLW5XFvgmonC0pNLhh6ZlKnRWnZ8lTiTs2TsugjitKyLTigLkR\nDBWb0YMMRNvCiWTVStyDuh1t+2J+SnqLkz5uj4QktY/wMpSzfQSZqNVROSBh8bz2\nVarQTzRNm/KArniQKnNeXfz0COdsX41S7ZgX1te6pemMvmWaf5ROhPAdZ0tK0zHa\nnXJ7v/iGOFt6xRK+U+tUeFWM36FkMGeqc7lxkBMsll7Ra2QOMaBBS11yqiyt9lnF\nfi0JQbTHAgMBAAECgf8giAE5AkTCsVe7qhcLm0zjZr47J8VotzODv0jxmum0Qzem\ns06Uvh4XcDepyg6zlq++CAD9foPjk3yq2LRwjYY4aAtyEjyXgxDqWRoat+qc/i5n\n2iuYh6MFGkiMGPScaMOtYK1Rdny4VX+fxuTcvkvq3VcvIEGwSKtXP/Y2lhxIVvEZ\nFxvtTYkYKNsC5csEwHYDvGsjkte8bujTK6qLvTjUee8wyBhe9gqXSnMw+0Hy24Hf\nE5K4C1xLrBAVVjDPVkWk26gSGYEPvJdhJ8/Ze3P4A8c8yi/H9KW54d3l00FABUNe\nKFULkRW8JM0UkHZEb7cFzX7H/WFdikl0dmgiDzECgYEAvb4dPbPpq2y2+SLQTOtz\n1C2UOet7qwl6bChETIUzLGrfX9T/lxoHuTq9F0iCpVS99P6KunYSsW2Y6obJXNAv\nbLUU9ZCT4fu3wxGUz8vPljxW8wGFoSjNSGT7Rt6SURq/kKrPzCBLlIAp8/KPQ5JE\nXoco52rnmhr9LWAegsW5U9cCgYEAvDZh0XxrQqWTme2+4oM74GDxuzybqTCwlLyS\neoZDMMFL8t3JGWkHqMNv1k8yAFrj0hhsG9RKdJoYwJudPVWO1qK+BSWro8tJhJXN\n7NmPCHLBeWbyJ4ZWDxLz3k+RspcpK/P5QqOajohH0GU52uGP2iFm/nYHWOCABkC2\ncvdZiJECgYBqsxxSdHf01H/YfgFRIB7UtITkRU4YEo5rgAFYXpc2ZSsUAv1wBU1O\nln97NmVxf8QKn5F35aoBaLZTPFTEAraIlRQiO5lNvXXLFnnumJg1zdy/bp2s0PsP\nuOmtIsB5J2eOfN+51HdsHN56tm5l+zzDQ5J3AKEZAhBZkfHWbEYZpQKBgDpfi3sT\nYZjsDZlCGV/bX+i5aH+vzn9s8HdQ/QUvOwuWB94tVz+gSZXX94m6SkG97saseGsx\nLl53pJGoMd5h+Mks9E5YXqGQXR7X72Q0HZ57KPJkMVp82ZgXQreCaie/pi9Rnc9D\nOp5WOh+yJX1zU9BNZ8ooBSNVjZ9i1rNVb9lhAoGAYBgm34R7iTqMnX3fV5+rtoMd\nG3TdqxUuSVWItJHr4tNosgIiob234KGbks4PZ2zIPuXGg88cMpeT0CvnFMabOKwW\nLq9wchFIDjDpLqPQE3ekTKNlw+xInsK1I3VAZWr4JOaReaTH1dD2+ksvo3dwhjzm\nYzejce/xJigCvrfh8jw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jenkins-gce@resolute-vault-339210.iam.gserviceaccount.com",
+  "client_id": "117992409059228915507",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jenkins-gce%40resolute-vault-339210.iam.gserviceaccount.com"
+}

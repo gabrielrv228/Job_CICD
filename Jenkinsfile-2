@@ -1,0 +1,12 @@
+pipeline{
+    agent { dockerfile true }
+   
+    stages{
+  
+        stage('Storage_check'){
+            steps{
+                sh label: '', script: 'python3 test_gcloudstorage.py'
+            }
+        }
+    }
+}
