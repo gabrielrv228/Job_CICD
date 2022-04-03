@@ -1,10 +1,29 @@
+
+name: Basic CI 
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 jobs:
+  build-java:
 
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
 
-  runs-on: ubuntu-latest
-        
-   steps:
+    - name: Set up 
+      uses: actions/setup-test1@v1
+    
+                            
+    - name: Grant permission for gradlew
+      run: terraform init
 
-        -  run: python3 test_gcloudstorage.py
-        -  run: terraform workspace new dev
-        -  run: terraform plan -out=tfdev_plan -var "env=dev" -var "project_id=resolute-vault-339210" -var "function-name=function-dev" 
+    - name: Build with Gradle
+      run: terraform workspace new dev
+
+    - name: Build and Push Docker Image
+      run: terraform plan -out=tfdev_plan -var "env=dev" -var "project_id=resolute-vault-339210" -var "function-name=function-dev"
