@@ -36,4 +36,4 @@ Solo hay que poner en el main.tf el path de las credenciales dentro de el repo d
 test_gcloudstorage.py, Funciona, pero no imprime lo que le dice la funcion por jenkins, en la terminal se ve, y se me olvidaba, está hecho en modo universal, faltaría ponerle el directorio que se quiere borrar del bucket para que no se lo cargue todo.
 
 - ACME lleva usando Jenkins mucho tiempo pero está actualmente abriéndose a probar nuevas teconologías con menor coste de gestión como Github Actions. Es por esto que también se requiere un pipeline de github actions para el despliegue de la unidad de almacenamiento, de modo que ACME pueda comparar ambas tecnologías
-- Bueno, ahi está en .github/workflows
+- Bueno, ahi está en .github/workflows ha sido successfull.
