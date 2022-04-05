@@ -30,4 +30,4 @@ jobs:
         
       - name: DEV Terraform Apply
         working-directory: ./    
-        run: terraform apply --auto-approve "tfdev_plan
+        run: terraform apply --auto-approve tfdev_plan
