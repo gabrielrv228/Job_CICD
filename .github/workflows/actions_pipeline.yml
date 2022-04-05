@@ -6,28 +6,42 @@ on:
       - main
 
 jobs:
-  deploy-dev:
-    name: 'DEV Deployment'
+  deploy-all:
+    name: ' Deployment'
     runs-on: ubuntu-latest
     environment: dev
 
     steps:
-      - name: DEV Checkout
+      - name:  Checkout
         uses: actions/checkout@v3
 
-      - name: DEV Terraform Init
+      - name:  Terraform Init
         working-directory: ./
         run: terraform init 
       
-      - name: DEV Terraform Create dev workspace
+      - name:  Terraform Create dev workspace
         working-directory: ./
         run: terraform workspace new dev
 
 
-      - name: DEV Terraform Plan
+      - name:  Terraform Plan dev
         working-directory: ./
         run: terraform plan -out=tfdev_plan -var "env=dev" -var "project_id=resolute-vault-339210" -var "function-name=function-dev"  
         
-      - name: DEV Terraform Apply
+      - name:  Terraform Apply dev
         working-directory: ./    
         run: terraform apply --auto-approve tfdev_plan
+        
+  
+        
+      - name: Terraform Init prod
+        working-directory: ./
+        run: terraform workspace new prod
+
+      - name:  Terraform Plan prod
+        working-directory: ./
+        run: terraform plan -out=tfprod_plan -var "env=prod" -var "project_id=resolute-vault-339210" -var "function-name=function-prod
+
+      - name:  Terraform Apply prod
+        working-directory: ./
+        run: terraform apply --auto-approve "tfprod_plan"
