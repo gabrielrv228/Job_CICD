@@ -40,7 +40,7 @@ jobs:
 
       - name:  Terraform Plan prod
         working-directory: ./
-        run: terraform plan -out=tfprod_plan -var "env=prod" -var "project_id=resolute-vault-339210" -var "function-name=function-prod
+        run: terraform plan -out=tfprod_plan -var "env=prod" -var "project_id=resolute-vault-339210" -var "function-name=function-prod"
 
       - name:  Terraform Apply prod
         working-directory: ./
