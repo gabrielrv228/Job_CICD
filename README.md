@@ -9,7 +9,6 @@ También he visto que con el job dsl no te permite usar  el path file:///.... so
 ![Screenshot from 2022-04-03 19-56-28](https://user-images.githubusercontent.com/95095337/161441747-1bba75ef-7017-44a2-909b-ccf132257601.png)
 
 
-No he hecho el makefile debido a que sería absurdo, ya que la aplicación que despliego es realmente simple y no requiere instalar ni testear mucho, no he tenido tiempo de desplegar algo mejor, aunque tampoco se especifica que clase de aplicación hay que desplegar. si es necesario para que la práctica sea apta haré algo más complejo.
 ![Screenshot from 2022-04-03 19-56-01](https://user-images.githubusercontent.com/95095337/161441706-192d4c1a-7e10-48be-bbd0-d0036101edfd.png)
 
 
