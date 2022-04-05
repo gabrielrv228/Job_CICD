@@ -1,29 +1,33 @@
-
-name: Basic CI 
+name: 'Deploy storage unit'
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build-java:
-
+  deploy-dev:
+    name: 'DEV Deployment'
     runs-on: ubuntu-latest
-    
+    environment: dev
+
     steps:
-    - uses: actions/checkout@v2
+      - name: DEV Checkout
+        uses: actions/checkout@v3
 
-    - name: Set up 
-      uses: Practica_CICD@v1
-    
-                            
-    - name: Grant permission for gradlew
-      run: terraform init
+      - name: DEV Terraform Init
+        working-directory: ./
+        run: terraform init 
+      
+      - name: DEV Terraform Create dev workspace
+        working-directory: ./
+        run: terraform workspace new dev
 
-    - name: Build with Gradle
-      run: terraform workspace new dev
 
-    - name: Build and Push Docker Image
-      run: terraform plan -out=tfdev_plan -var "env=dev" -var "project_id=resolute-vault-339210" -var "function-name=function-dev"
+      - name: DEV Terraform Plan
+        working-directory: ./
+        run: terraform plan -out=tfdev_plan -var "env=dev" -var "project_id=resolute-vault-339210" -var "function-name=function-dev"  
+        
+      - name: DEV Terraform Apply
+        working-directory: ./    
+        run: terraform apply --auto-approve "tfdev_plan
