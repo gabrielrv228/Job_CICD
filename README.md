@@ -1,7 +1,7 @@
 # Practica_CICD
-Bueno, aquí esta la práctica,han sido unas duras batallas con el señor jenkins y on terraform el cual nunca había usado.
+Bueno, aquí esta la práctica,han sido unas duras batallas con el señor jenkins y con terraform el cual nunca había usado.
 
-He hecho los job dsl, pero he decidido prescindir de ellos, porque en este caso no son muy necesarios, ya que si usas un proyecto privado de git vas a tener que especificar su clave y su url y te cuesta lo mismo que hacerlo graficamente en jenkis.
+He hecho los job dsl, pero he decidido prescindir de ellos, porque en este caso no son muy necesarios, ya que si usas un proyecto privado de git vas a tener que especificar su clave y su url y te cuesta lo mismo que hacerlo graficamente en jenkins.
 
 He probado a coger el repositorio de mi cuenta de github en modo privado y con las credenciales, pero he preferido referenciarlo desde local, ya que es más seguro porque no tengo que subir a la nube el json con mis credenciales de gcloud.
 
@@ -33,6 +33,6 @@ Cualquiera que tenga las credenciales de una service account con los perimisos s
 Solo hay que poner en el main.tf el path de las credenciales dentro de el repo de git
 
 - Además ACME también quiere revisar cada 10 minutos que el contenido que hay en cada una de las unidades de almacenamiento no supera los 20MiB. Si esto pasa, se vaciarán las unidades de almacenamiento
-test_gcloudstorage.py, Funciona, pero no imprime lo que le dice la funcion por jenkins, en la terminal se ve. 
+test_gcloudstorage.py, Funciona, pero no imprime lo que le dice la funcion por jenkins, en la terminal se ve, y se me olvidaba, está hecho en modo universal, faltaría ponerle el directorio que se quiere borrar del bucket para que no se lo cargue todo.
 
 - ACME lleva usando Jenkins mucho tiempo pero está actualmente abriéndose a probar nuevas teconologías con menor coste de gestión como Github Actions. Es por esto que también se requiere un pipeline de github actions para el despliegue de la unidad de almacenamiento, de modo que ACME pueda comparar ambas tecnologías
