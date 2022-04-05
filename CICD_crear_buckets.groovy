@@ -6,7 +6,7 @@ pipelineJob("CICD_crear_buckets") {
 			scm {
 				git {
 					remote {
-						github("file:///home/powerppuma/Desktop/test5", "")
+						github("file:///home/$USER/Desktop/whatever", "")
 					}
 					branch("*/master")
 				}
