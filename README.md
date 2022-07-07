@@ -20,4 +20,19 @@ In this case we have decided to make use of [Google Cloud](https://cloud.google.
  * [DSLs](./DSLs) needed to create both Jenkins jobs
  * [Makefile](./Makefile) for developers
  * [Script](./test_gcloudstorage.py) for bucket size check coded in python
-
+ ## Instructions:
+ 
+ * At first, for safety reasons we need to create an IAM user with only the necessary permissions for performing the task:
+ At first we create a project and an user, then we create a custom IAM role and assign it to the previously created user.
+ - For creating the role we will make use of the cli and the following command:
+ gcloud iam roles create bucket
+ storage.buckets.create
+storage.buckets.delete
+storage.buckets.list
+```Shell
+gcloud iam roles create bucketAdmin \
+    --project example-project-id-1 \
+    --title "Bucket viewer" \
+    --description "This role has only the storage.buckets.get permission" \
+    --permissions storage.buckets.create, storage.buckets.delete, storage.buckets.list
+```
