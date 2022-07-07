@@ -1,4 +1,16 @@
-# Practica_CICD
+# Job CICD
+In this case, the company ACME wants to start testing the cloud, so we are going to create fully automated cloud storage units. 
+The ACME gave the following requierments:
+
+- They want two storage units, as they have two environments: dev and prod. Therefore these units will be called respectively acme-storage-dev and acme-storage-prod.
+- They want the deployment flow for the dev environment to be fully automatic, with no manual intervention.
+- However, the deployment flow for prod will require an administrator to approve the deployment.
+- ACME developers must be able to deploy from their machines for the dev environment.
+- They want the credentials to deploy to never be stored in the code.
+- In addition ACME also wants to check every 10 minutes that the content on each of the storage units does not exceed 20MiB. If this happens, the storage units will be emptied.
+- ACME has been using Jenkins for a long time but is currently opening up to try new technologies with lower management costs such as Github Actions. This is why a github actions pipeline is also required for the storage unit deployment, so that ACME can compare both technologies.
+
+
 Bueno, aquí esta la práctica,han sido unas duras batallas con el señor jenkins y con terraform el cual nunca había usado.
 
 He hecho los job dsl, pero he decidido prescindir de ellos, porque en este caso no son muy necesarios, ya que si usas un proyecto privado de git vas a tener que especificar su clave y su url y te cuesta lo mismo que hacerlo graficamente en jenkins.
