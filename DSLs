@@ -1,0 +1,31 @@
+pipelineJob('Infra_Deploy') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url("https://github.com/gabrielrv228/Job_CICD.git")
+                    }
+                    branches("main")
+                    scriptPath('Jenkinsfile')
+                }
+            }
+        }
+    }
+}
+
+pipelineJob('Storage_Size_Check') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url("https://github.com/gabrielrv228/Job_CICD.git")
+                    }
+                    branches("main")
+                    scriptPath('Jenkinsfile-Storage-Check')
+                }
+            }
+        }
+    }
+}
