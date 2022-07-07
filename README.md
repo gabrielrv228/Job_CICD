@@ -12,7 +12,7 @@ The ACME gave the following requierments:
 
 In this case we have decided to make use of [Google Cloud](cloud.google.com) for the creation of the storage buckets 
 ## Assets of the project
-* Infrastructure project as code](./infra) using [terraform](https://www.terraform.io/) for the deployment of cloud storage drives
+* [Infrastructure project as code](./infra) using [terraform](https://www.terraform.io/) for the deployment of cloud storage drives
  * [Dockerfiles](./agents) corresponding to the required Jenkins agents
  * [Jenkinsfile](./Jenkinsfile) to run the deployment with terraform using [Jenkins](jenkins.io)
  * [Github Actions YAML](./ghactions.yml) to run the terraform deployment using Github Actions
