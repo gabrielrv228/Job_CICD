@@ -1,4 +1,4 @@
-# Job CICD
+# Practical Job CICD
 In this case, the company ACME wants to start testing the cloud, so we are going to create fully automated cloud storage units. 
 The ACME gave the following requierments:
 
