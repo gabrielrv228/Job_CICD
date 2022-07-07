@@ -22,8 +22,12 @@ In this case we have decided to make use of [Google Cloud](https://cloud.google.
  * [Script](./test_gcloudstorage.py) for bucket size check coded in python
  ## Instructions:
  
- * At first, for safety reasons we need to create an IAM user with only the necessary permissions for performing the task:
- At first we create a project and an user, then we create a custom IAM role and assign it to the previously created user.
+ * At first, for safety reasons we need to create a service account with only the necessary roles for performing the task.:
+  Create a project and an user, then we create a custom IAM role and assign it to the previously created user.
+ - For creating the service account:
+ ```Shell
+ gcloud iam service-accounts create 'Your chosen name without quotes'
+ ```
  - For creating the role we will make use of the cli and the following command:
 
 ```Shell
