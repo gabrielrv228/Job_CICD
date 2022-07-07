@@ -11,7 +11,7 @@ The ACME gave the following requierments:
 - ACME has been using Jenkins for a long time but is currently opening up to try new technologies with lower management costs such as Github Actions. This is why a github actions pipeline is also required for the storage unit deployment, so that ACME can compare both technologies.
 
 In this case we have decided to make use of [Google Cloud](cloud.google.com) for the creation of the storage buckets 
-
+##Assets of the project
 * Infrastructure project as code](./infra) using [terraform](https://www.terraform.io/) for the deployment of cloud storage drives
  * [Dockerfiles](./agents) corresponding to the required Jenkins agents
  * Jenkinsfile](./Jenkinsfile.deploy) to run the deployment with terraform using [Jenkins](jenkins.io)
