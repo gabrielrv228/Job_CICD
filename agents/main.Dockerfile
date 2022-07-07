@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM ubuntu:21.10
+=======
+FROM ubuntu:20.04
+>>>>>>> 69ed7bcf7ddd04449743e32454fda412e36c0aaf
 
 ARG DEBIAN_FRONTEND=noninteractive
 
