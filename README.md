@@ -10,10 +10,7 @@ The ACME gave the following requierments:
 - In addition ACME also wants to check every 10 minutes that the content on each of the storage units does not exceed 20MiB. If this happens, the storage units will be emptied.
 - ACME has been using Jenkins for a long time but is currently opening up to try new technologies with lower management costs such as Github Actions. This is why a github actions pipeline is also required for the storage unit deployment, so that ACME can compare both technologies.
 
-
-Bueno, aquí esta la práctica,han sido unas duras batallas con el señor jenkins y con terraform el cual nunca había usado.
-
-He hecho los job dsl, pero he decidido prescindir de ellos, porque en este caso no son muy necesarios, ya que si usas un proyecto privado de git vas a tener que especificar su clave y su url y te cuesta lo mismo que hacerlo graficamente en jenkins.
+In this case we have decided to make use of Google Cloud for the creation of the storage buckets 
 
 He probado a coger el repositorio de mi cuenta de github en modo privado y con las credenciales, pero he preferido referenciarlo desde local, ya que es más seguro porque no tengo que subir a la nube el json con mis credenciales de gcloud.
 
