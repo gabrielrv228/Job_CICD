@@ -25,5 +25,5 @@ In this case we have decided to make use of [Google Cloud](https://cloud.google.
  * At first, for safety reasons we need to create a service account with only the necessary roles for performing the task.:
   Create a project and an user, then we create a custom IAM role and assign it to the previously created user.
   Then you have to create a service account and assign it the Storage Admin Role.
-  If you don't know how to do it [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts)you have all the requiered documentation.
+  If you don't know how to do it [here](https://cloud.google.com/iam/docs/creating-managing-service-accounts) you have all the requiered documentation.
 
