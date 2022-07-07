@@ -19,5 +19,5 @@ In this case we have decided to make use of [Google Cloud](https://cloud.google.
  * [Jenkinsfile](./Jenkinsfile-Storage-Check) to run periodic memory check of memory used by storage units
  * [DSLs](./DSLs) needed to create both Jenkins jobs
  * [Makefile](./Makefile) for developers
- * [Script for storage check](./test_gcloudstorage.py) coded in python
+ * [Script](./test_gcloudstorage.py) for bucket size check coded in python
 
