@@ -11,7 +11,7 @@ pipelineJob("CICD_crear_buckets") {
 					branch("*/master")
 				}
 			}
-			scriptPath("Jenkinsfile-2")
+			scriptPath("Jenkinsfile-Storage-Check")
 		}
 	}
 	disabled(false)
