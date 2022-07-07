@@ -10,7 +10,7 @@ The ACME gave the following requierments:
 - In addition ACME also wants to check every 10 minutes that the content on each of the storage units does not exceed 20MiB. If this happens, the storage units will be emptied.
 - ACME has been using Jenkins for a long time but is currently opening up to try new technologies with lower management costs such as Github Actions. This is why a github actions pipeline is also required for the storage unit deployment, so that ACME can compare both technologies.
 
-In this case we have decided to make use of [Google Cloud](https://www.cloud.google.com/) for the creation of the storage buckets 
+In this case we have decided to make use of [Google Cloud](https://cloud.google.com/) for the creation of the storage buckets 
 ## Assets of the project
 * [Infrastructure project as code](./infra) using [terraform](https://www.terraform.io/) for the deployment of cloud storage drives
  * [Dockerfiles](./agents) corresponding to the required Jenkins agents
