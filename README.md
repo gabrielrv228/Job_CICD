@@ -31,8 +31,8 @@ storage.buckets.delete
 storage.buckets.list
 ```Shell
 gcloud iam roles create bucketAdmin \
-    --project example-project-id-1 \
-    --title "Bucket viewer" \
-    --description "This role has only the storage.buckets.get permission" \
+    --project examp \
+    --title "Bucket Admin" \
+    --description "This role allows you to list, create and delete storage buckets" \
     --permissions storage.buckets.create, storage.buckets.delete, storage.buckets.list
 ```
