@@ -34,5 +34,5 @@ gcloud iam roles create bucketAdmin \
     --project examp \
     --title "Bucket Admin" \
     --description "This role allows you to list, create and delete storage buckets" \
-    --permissions storage.buckets.create, storage.buckets.delete, storage.buckets.list
+    --permissions storage.buckets.create,storage.buckets.delete,storage.buckets.list
 ```
