@@ -25,10 +25,7 @@ In this case we have decided to make use of [Google Cloud](https://cloud.google.
  * At first, for safety reasons we need to create an IAM user with only the necessary permissions for performing the task:
  At first we create a project and an user, then we create a custom IAM role and assign it to the previously created user.
  - For creating the role we will make use of the cli and the following command:
- gcloud iam roles create bucket
- storage.buckets.create
-storage.buckets.delete
-storage.buckets.list
+
 ```Shell
 gcloud iam roles create bucketAdmin \
     --project Your project id \
@@ -36,3 +33,9 @@ gcloud iam roles create bucketAdmin \
     --description "This role allows you to list, create and delete storage buckets" \
     --permissions storage.buckets.create,storage.buckets.delete,storage.buckets.list
 ```
+
+- For assign the role:
+```Shell
+gcloud projects add-iam-policy-binding Your_project_id \
+      --member='serviceAccount:test-proj1@example.domain.com' \
+      --role='projects/Your_project_id/roles/bucketViewer'
