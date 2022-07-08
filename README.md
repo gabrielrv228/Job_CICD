@@ -3,8 +3,13 @@ In this case, the company ACME wants to start testing the cloud, so we are going
 The ACME gave the following requierments:
 
 - They want two storage units, as they have two environments: dev and prod. Therefore these units will be called respectively acme-storage-dev and acme-storage-prod.
+![161442120-530fae4e-6e09-48c6-8478-a86b57bbebbe](https://user-images.githubusercontent.com/95095337/178016924-e7b52afe-a16f-400d-a5af-2cdfdb051be0.png)
+
 - They want the deployment flow for the dev environment to be fully automatic, with no manual intervention.
 - However, the deployment flow for prod will require an administrator to approve the deployment.
+![161441846-17c5f2a3-7730-472a-9111-25981c2d7808](https://user-images.githubusercontent.com/95095337/178017093-df737944-d30d-45ef-afec-c650dccd826e.png)
+![161441814-63fbb71c-1048-4275-a038-cc20fa6852ab](https://user-images.githubusercontent.com/95095337/178017208-3ca87a9e-04f0-4bdc-88d3-c7ead35dba80.png)
+
 - ACME developers must be able to deploy from their machines for the dev environment.
 - They want the credentials to deploy to never be stored in the code.
 - In addition ACME also wants to check every 10 minutes that the content on each of the storage units does not exceed 20MiB. If this happens, the storage units will be emptied.
