@@ -11,7 +11,6 @@ The ACME gave the following requierments:
 ![161441814-63fbb71c-1048-4275-a038-cc20fa6852ab](https://user-images.githubusercontent.com/95095337/178017208-3ca87a9e-04f0-4bdc-88d3-c7ead35dba80.png)
 
 - ACME developers must be able to deploy from their machines for the dev environment.
-- They want the credentials to deploy to never be stored in the code.
 - In addition ACME also wants to check every 10 minutes that the content on each of the storage units does not exceed 20MiB. If this happens, the storage units will be emptied.
 - ACME has been using Jenkins for a long time but is currently opening up to try new technologies with lower management costs such as Github Actions. This is why a github actions pipeline is also required for the storage unit deployment, so that ACME can compare both technologies.
 
