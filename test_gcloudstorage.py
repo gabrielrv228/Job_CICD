@@ -12,11 +12,11 @@ print(type(Size))
 Max_size = int(20971520)
 
 def bucket_size_check():
-    print("hola")
+    print("Hello")
     if Size > Max_size:
         os.system("gsutil rm -r gs://acme-storage-prod")
     else:
-        print('es menor de 20mb')  
+        print('it is less than 20mb')  
 
 bucket_size_check()
 

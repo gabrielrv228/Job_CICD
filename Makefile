@@ -18,11 +18,4 @@ plan_dev:
 apply_dev: 
     terraform apply --auto-approve "tfdev_plan"
 
-workspace_create_prod:
-    terraform workspace new prod
 
-plan_prod:
-	terraform plan -out=tfprod_plan -var "env=prod" -var "project_id=resolute-vault-339210" -var "function-name=function-prod"
-
-apply_prod:
-    terraform apply --auto-approve "tfprod_plan"
